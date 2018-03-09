@@ -1,11 +1,5 @@
 # IgPhyML_utilities
 
-A phylogenetic codon substitution model for antibody lineages
-Supplemental code used in ancestral state reconstruction
-Kenneth B Hoehn
-kenneth.hoehn@yale.edu
-9/March/2018
-
 This repo contains scripts for simulating sequences under the HLP17 model, and
 reconstructing intermediate sequences. These scripts were originally just meant 
 for a single publication, so they're a little clunky to use and may fail under 
