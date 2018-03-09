@@ -56,7 +56,7 @@ Hoehn, K. B., Lunter, G., & Pybus, O. G. (2017). A phylogenetic codon substituti
 model for antibody lineages. Genetics, 206(1), 417-427. 
 
 
-\1. When you run IgPhyML on a data set
+1. When you run IgPhyML on a data set
 #####################################
 
 Use the --ambigfile <ambigfile> flag when you use the HLP17 model. This will 
@@ -71,7 +71,7 @@ Which will fit an asymmetric WRC/GYW motif model. If you want to try a
 different motif model, it's pretty easy - check out the manual.
 
 
-\2. Complete config file
+2. Complete config file
 #####################################
 
 Within the config file you need to specify IgPhyML stats and (re-rooted) tree 
@@ -99,7 +99,7 @@ the IgPhyML manual, you can find this easily by entering the command 'which
 igphyml' and omitting the 'src' at the end. 
 
 
-\4. Run script
+3. Run script
 #####################################
 
 The basic operation is
