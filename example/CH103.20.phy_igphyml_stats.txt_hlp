@@ -1,0 +1,71 @@
+
+# oooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooo
+#                       --- IgPhyML 0.94 201701.12 ---
+#                Kenneth B Hoehn, Gerton Lunter, Oliver G Pybus
+#                                 
+#                                 
+#                          Based off of codonPhyML
+# Marcelo S Zanetti, Stefan Zoller, Manuel Gil, Louis du Plessis, Maria Anisimova
+#                  http://sourceforge.net/projects/codonphyml/
+# oooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooo
+. Sequence filename: 			CH103.20.phy
+. Data set: 				1
+. Tree topology search: 		NNIs
+. Initial tree: 			BioNJ + GYECMK07
+. Model name: 				HLP16+W+K+F CF3x4
+. Hotspots: 				WRC_2:0,GYW_0:1
+. h optimization: 			e,e
+. Partition file: 			
+. Genetic code: 			Standard
+. Number of taxa: 			20
+. Log-likelihood: 			-1219.08
+. Unconstrained Log-likelihood: 	-355.95
+. Parsimony: 				870
+. Tree size: 				3.52945
+. Proportion of invariant: 		0
+. Transition/transversion ratio: 	2.09137
+. Omega 0 SINGLE: 			0.541638
+. Hotspot model		h_index	optimized?	h_value: 
+    Motif:	WRC_2		0		1		1.94220323   
+    Motif:	GYW_0		1		1		4.21586726   
+. Nucleotides frequencies: 
+    Position 1: f(T1)=0.17619577   f(C1)=0.19151411   f(A1)=0.29588063   f(G1)=0.33640950   
+    Position 2: f(T2)=0.23811676   f(C2)=0.20356277   f(A2)=0.29122132   f(G2)=0.26709916   
+    Position 3: f(T3)=0.26894237   f(C3)=0.31576443   f(A3)=0.14251148   f(G3)=0.27278172   
+. Codon frequencies: 
+    f(TTT)=0.01160876   f(TTC)=0.01362981   f(TTA)=0.00615143   f(TTG)=0.01177448   
+    f(TCT)=0.00992417   f(TCC)=0.01165194   f(TCA)=0.00525878   f(TCG)=0.01006584   
+    f(TAT)=0.01419773   f(TAC)=0.01666951   f(TAA)=0.00000000   f(TAG)=0.00000000   
+    f(TGT)=0.01302172   f(TGC)=0.01528876   f(TGA)=0.00000000   f(TGG)=0.01320761   
+    f(CTT)=0.01261801   f(CTC)=0.01481477   f(CTA)=0.00668624   f(CTG)=0.01279815   
+    f(CCT)=0.01078697   f(CCC)=0.01266495   f(CCA)=0.00571597   f(CCG)=0.01094096   
+    f(CAT)=0.01543207   f(CAC)=0.01811875   f(CAA)=0.00817739   f(CAG)=0.01565238   
+    f(CGT)=0.01415382   f(CGC)=0.01661795   f(CGA)=0.00750005   f(CGG)=0.01435587   
+    f(ATT)=0.01949426   f(ATC)=0.02288815   f(ATA)=0.01032993   f(ATG)=0.01977256   
+    f(ACT)=0.01666538   f(ACC)=0.01956677   f(ACA)=0.00883092   f(ACG)=0.01690329   
+    f(AAT)=0.02384185   f(AAC)=0.02799264   f(AAA)=0.01263370   f(AAG)=0.02418221   
+    f(AGT)=0.02186701   f(AGC)=0.02567399   f(AGA)=0.01158724   f(AGG)=0.02217917   
+    f(GTT)=0.02216453   f(GTC)=0.02602331   f(GTA)=0.01174489   f(GTG)=0.02248094   
+    f(GCT)=0.01894815   f(GCC)=0.02224697   f(GCA)=0.01004055   f(GCG)=0.01921865   
+    f(GAT)=0.02710764   f(GAC)=0.03182700   f(GAA)=0.01436423   f(GAG)=0.02749462   
+    f(GGT)=0.02486228   f(GGC)=0.02919073   f(GGA)=0.01317442   f(GGG)=0.02521721   
+. Time used: 				0h2m16s
+. Seconds: 				136
+. MLTree: 				(((((((((64_53:0.1037927911,325_53:0.2324926090):0.0441747216,(V4-59:0.0000009585,(199_53:0.0699109561,252_53:0.3708668852):0.0346395034):0.0000012346):0.0127662971,449_53:0.1059927458):0.0263326356,169_53:0.2220127665):0.0545243607,((((245_53:0.0000015957,3_53:0.0263033714):0.1221650888,176_53:0.1593339790):0.0697571749,73_53:0.0915847439):0.0140509636,87_53:0.1793175491):0.0151152555):0.0472577450,(455_53:0.1049741144,(80_53:0.0530211446,434_53:0.0293793972):0.0922754342):0.0486526220):0.0884346718,(178_144:0.3701195092,392_92:0.1959515594):0.0974960356):0.3242196164,110_92:0.0566994176):0.0252216743,42_92:0.0273102475,108_92:0.0133023786);
+. MLTreeSize: 				3.52945
+. Omega partition indexes: 		0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 
+# 
+# If you use IgPhyML, please cite:
+# K.B. Hoehn, G Lunter, O.G. Pybus
+# A phylogenetic codon substitution model for antibody lineages
+# Under review
+# 
+# and
+# 
+# M. Gil, M.S. Zanetti, S. Zoller and M. Anisimova 2013
+# CodonPhyML: Fast Maximum Likelihood Phylogeny Estimation under Codon Substitution Models
+# Molecular Biology and Evolution, pages 1270-1280, volume 30, number 6
+# 
+# If you use aBayes branch supports please cite:
+# M. Anisimova, M. Gil, J.F. Dufayard, C. Dessimoz and O. Gascuel 2011
+# Survey of branch support methods demonstrates accuracy, power, and robustness of fast likelihood-based approximation schemes. Syst Biol 60:685-699
