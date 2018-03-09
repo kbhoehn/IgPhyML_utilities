@@ -13,12 +13,15 @@ https://github.com/kbhoehn/IgPhyML
 
 You'll also need the Perl programming language and the following Perl 
 dependencies installed:
+
 PDL
+
 PDL::LinearAlgebra::Trans
+
 
 I recommend using cpanm to install them.
 
-If you publish any analyses using these scripts (or part of them), please cite:
+If you use these scripts (or part of them) for a publication, please cite:
 
 Hoehn, K. B., Lunter, G., & Pybus, O. G. (2017). A phylogenetic codon substitution 
 model for antibody lineages. Genetics, 206(1), 417-427. 
