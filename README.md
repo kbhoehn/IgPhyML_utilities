@@ -1,7 +1,7 @@
 # IgPhyML_utilities
 
 This repo contains scripts for simulating sequences under the HLP17 model, and
-reconstructing intermediate sequences from IgPhyML output. These scripts were originally just meant for a single publication, so they're a little clunky to use. Let me know if need help using them or get results that don't make sense, and I'll look into it.
+reconstructing intermediate sequences from IgPhyML output. These scripts were originally just meant for a limited set of analyses, so they're a little clunky to use. Let me know if need help using them or get results that don't make sense, and I'll look into it.
 
 See README.txt for program usage.
 
