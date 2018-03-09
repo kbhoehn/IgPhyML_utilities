@@ -133,6 +133,13 @@ If this, or any of the previously mentioned likelihood values spat out during
 the ASR stage (but not lower/upper partial likelihoods) are different from that 
 in the stats file, something is wrong. Email me if you can't figure it out.
 
+One thing to keep in mind is that the reconstructed codons are the most likely 
+codon reconstructions at each node (marginal), rather than the most likely sequence 
+of mutations across the tree (joint), so be careful comparing the reconstructions 
+between nodes. Differences in codons between nodes don't necessarily indicate a 
+substitution likely occurred between them. I'd also recommend directing the output 
+into a log file, because part of the terminal output describes confidence in each 
+site's assignment. Email me if you need an explanation of that.
 
 For 20 taxa, as in the example file, this doesn't take long, but if you have a 
 very large dataset you may need to watch these results trickle in for a while.
@@ -161,7 +168,7 @@ Simulations use a similar configuration file as reconstructions. See sim.config 
 
 perl simulateHLP17.pl <config file> <overwritten parameters>
 
-for example:
+for example (once you properly set the 'igphyml' flag - see section 2):
 
 perl simulateHLP17.pl sim.config
 
@@ -169,6 +176,9 @@ This will output 10 simulated lineages using the parameters specified in
 example/CH103.20.phy_igphyml_stats.txt_hlp and the tree in 
 example/CH103.20.phy_igphyml_tree.txt_hlp.figtree.reroot. 
 
+It is possible to do fully context-dependent simulations under the HLP17 model, but these
+are a bit more complicated. You can get an example in the code from File S2 from: 
+https://www.ncbi.nlm.nih.gov/pmc/articles/PMC5419485/
 
 References
 #####################################
