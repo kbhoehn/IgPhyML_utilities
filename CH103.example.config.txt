@@ -1,0 +1,10 @@
+length	81
+rooted	1
+outdir example
+seqfile	example/CH103.20.fa
+rootid	V4-59
+igphyml	../IgPhyML
+stats example/CH103.20.phy_igphyml_stats.txt_hlp
+tree example/CH103.20.phy_igphyml_tree.txt_hlp.figtree.reroot
+ambigfile example/CH103.ambig 
+stem	CH103.example
