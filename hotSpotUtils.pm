@@ -161,33 +161,32 @@ sub printtreestring_AAeach{
 
 #Read in a fasta file
 sub getfasta{
-  my($filename) = @_;
-  chomp($filename);
-  my $trying = "Unable to open $filename.\n";
-  open(INPUTFILE, $filename) or die($trying);  # Create a new file
-  my @filedata = <INPUTFILE>;
-  close INPUTFILE;
+  my $in = $_[0];
+  chomp($in);
+  open(IN, $in) or die("Couldn't open $in.\n");  # Create a new file
   my %seqs;
-  my $seqname;
-  my $seq = '';
-  if(scalar(@filedata)==0){return \%seqs}
-  foreach my $line (@filedata) {
-    if($line =~/^\s*$/) { next; }     # Ignore blank lines
-    elsif($line =~/^\s*#/) { next; }  # Ignore comments
-    elsif($line =~ /^\>\s*(.*)\s*$/) {
+  my $id;
+  my $s = '';
+  while(<IN>){
+    my $line=$_;
+    chomp($line);
+    if($line =~/^\s*$/) {next;}     
+    elsif($line =~/^\s*#/) {next;}  
+    elsif($line =~ /^\>\s*(\S+)\s*$/) {
       my $temp = $1;
       $temp =~ s/\s//sg;
-      if(length($seq) > 0) {
-        $seq =~ s/\s//sg;
-        $seqs{$seqname} = $seq;
-        $seq = '';
+      if(length($s) > 0) {
+        $s =~ s/\s//sg;
+        $seqs{$id} = $s;
+        $s = '';
       }
-      $seqname = $temp;
-      next;
-    } else { $seq .= $line; }
+      $id = $temp;
+    }else{
+     $s .= $line;
+   }
   }
-  $seq =~ s/\s//sg;
-  $seqs{$seqname} = $seq;
+  $s =~ s/\s//sg;
+  $seqs{$id} = $s;
   return \%seqs;
 }
 
