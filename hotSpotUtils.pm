@@ -163,11 +163,11 @@ sub printtreestring_AAeach{
 sub getfasta{
   my $in = $_[0];
   chomp($in);
-  open(IN, $in) or die("Couldn't open $in.\n");  # Create a new file
+  open(FASTAFILEIN, $in) or die("Couldn't open $in.\n");  # Create a new file
   my %seqs;
   my $id;
   my $s = '';
-  while(<IN>){
+  while(<FASTAFILEIN>){
     my $line=$_;
     chomp($line);
     if($line =~/^\s*$/) {next;}     
@@ -187,6 +187,7 @@ sub getfasta{
   }
   $s =~ s/\s//sg;
   $seqs{$id} = $s;
+  close(FASTAFILEIN);
   return \%seqs;
 }
 
